@@ -18,7 +18,7 @@ double risk_neutral_probability(double R,double U,double D)
     return q;
 }
 //Estimate the stock price based on the cox ross rubinstein formula
-double crr_pricer(double s0 ,double U, double D , double n,double i ) {
+double stock_p(double s0 ,double U, double D , double n,double i ) {
     double s=s0*pow(1+U,i)*pow(1+D,n-i);
     return s;
 }
