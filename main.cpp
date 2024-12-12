@@ -26,7 +26,7 @@ int main()
         double q=risk_neutral_probability(R,U,D);
         std::cout<<"The Risk Neutral Probability Measure : "<<q<<"\n";
         // Estimating the stock price
-        double s=crr_pricer(s0 ,U,D ,n,i );
+        double s=stock_p(s0 ,U,D ,n,i );
         std::cout<<"The price of the stock is :"<<s;
     double pay_off=eur_call_opt(k,s);
     std::cout<<"pay_off : "<<pay_off;
